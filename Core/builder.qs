@@ -86,10 +86,10 @@ function StructParserGen() {
 						outtxt.write("getIPAddress()");
 						break;
 					}
-					else if(RegExp.$3 === "statusType") {
+					/*else if(RegExp.$3 === "statusType") {
 						outtxt.write("getEFSTInfo()");
 						break;
-					}
+					}*/
 					else if(RegExp.$3 === "ID") {//For Shortcut keys
 						outtxt.write("getSkillOrItemInfo()");
 						break;
