@@ -125,7 +125,7 @@ function StructParserGen() {
 				case 'unsigned char':
 				case 'char':
 					if (RegExp.$3 === "dir") {//not expected to be an array
-						outtxt.write("getDirection()");
+						outtxt.write("getDir()");
 					}
 					else if (RegExp.$4 === "") {
 						outtxt.write("parser.fetchByte()");
