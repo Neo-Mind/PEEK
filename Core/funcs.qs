@@ -94,3 +94,7 @@ Number.prototype.packToHex = function(size)  {
 	return result;
 }
 
+String.prototype.unpackToInt = function() {
+	var orig = this;
+	return parseInt(orig.split(" ").reverse().join(""),16);
+}
